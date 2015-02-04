@@ -1,6 +1,7 @@
 # WordPress Vagrant Boxes using PHP 5.2
 
-This Vagrant configuration is based off the tierra/wordpress-php52 box
+This Vagrant configuration is based off [wp-vagrant](https://github.com/tierra/wp-vagrant).
+I suggest that you check them out if you need to setup WordPress with different versions of PHP.
 
 ## Configurations Provided
 
@@ -20,8 +21,8 @@ This Vagrant configuration is based off the tierra/wordpress-php52 box
 1. Install both [VirtualBox](https://www.virtualbox.org/) and
    [Vagrant](http://www.vagrantup.com/).
 2. Clone this repository to a convenient location for your development:
-    * `git clone https://github.com/tierra/wp-vagrant.git`
-    * `cd wp-vagrant`
+    * `git clone https://github.com/easterncoder/wp-php52-vagrant.git`
+    * `cd wp-php52-vagrant`
 3. Add the following to your hosts file:
     * `192.168.167.9  wordpress.local`
 4. Start Vagrant: `vagrant up`
@@ -34,7 +35,7 @@ To add more vhosts, create a folder in the `vhosts` directory that matches
 your hostname. Example, if your hostname is `mysite.dev` then just create the
 `vhosts/mysite.dev` folder and Apache will take care of the rest.
 
-You can reach the default WordPress install at
+You can reach the default WordPress install at:
 
 * http://wordpress.local/
 
