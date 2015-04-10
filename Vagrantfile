@@ -15,6 +15,7 @@ Vagrant.configure("2") do |config|
         'modifyvm', :id,
         '--memory', '1024',
       ]
+      vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     end
   end
 end
